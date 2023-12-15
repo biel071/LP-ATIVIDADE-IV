@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 #include <string.h>
-#include <time.h>
 
-#define TAM 2
+
+#define TAM 3
 
 struct dados_pessoa
 {
@@ -25,7 +24,7 @@ void verificacaoDados(struct dados_pessoa contato[], char *buscador)
             printf("O numero desejado e: %s \n", contato[i].telefone);
             return;
         }
-        printf("\nContato n„o encontrado.");
+        printf("\nContato n√£o encontrado.");
     }
 }
 
@@ -38,7 +37,7 @@ int main()
 
     for (i = 0; i < TAM; i++)
     {
-        printf("Digite seu nome: \n");
+        printf("DIGITE O NOME DO CONTATO: \n");
         gets(contato[i].nome);
 
         printf("DIGITE SEU TELEFONE: \n");
