@@ -10,13 +10,6 @@ struct informacoes {
 	int quantidade;
 };
 
-float calcularValorTotal(const struct informacoes *produto) {
-    return produto->preco * produto->quantidade;
-}
-void consultarEstoque(const struct Produto *produto) {
-    printf("Estoque de %s: %d unidades\n", produto->nome, produto->quantidadeEstoque);
-    printf("Valor total em estoque: R$%.2f\n", calcularValorTotal(produto));
-
 
 int main(){
 	
@@ -62,7 +55,6 @@ int main(){
 	 		scanf ("%d",&produto.quantidade);
 	 		fflush (stdin);
 	 		
-	 		 consultarEstoque(Produto);
 	 		
 	 		system ("cls||clear");	
 			printf ("O nome do produto desejado:%s",produto.nome);
