@@ -5,7 +5,7 @@
 struct Aluno {
     char nome[200];
     char dataNascimento[200];
-    float notas[2]; // Alteração para armazenar as notas em um array
+    float notas[2]; 
     float media;
 };
 
